@@ -23,23 +23,22 @@ struct SummeryView: View {
 					Text(questions[0])
 						.font(.title2)
 					Text("\(answer[0])")
-						.font(.title3)
 				}
 // 2nd Question and answer
 				Section{
 					Text(questions[1])
 						.font(.title2)
 					Text("\(answer[1])")
-						.font(.title3)
 				}
 // 3rd Question and answer
 				Section{
 					Text(questions[2])
 						.font(.title2)
 					Text("\(answer2.joined(separator: ","))")
-						.font(.title3)
 				}
 			}
+			
+			Spacer()
 
 // Button to navigate back to home
 			

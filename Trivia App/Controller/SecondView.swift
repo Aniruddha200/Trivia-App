@@ -22,6 +22,7 @@ struct SecondView: View {
 //Second Question
 			Text(questions[1])
 				.font(.title2)
+			Text("You picked \(picked.isEmpty ? "None": picked)")
 //Answer Picker
 			Picker("Select anyone", selection: $picked) {
 				
