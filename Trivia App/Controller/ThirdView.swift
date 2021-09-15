@@ -32,6 +32,7 @@ struct ThirdView: View {
 			
 // 3rd and last question
 			Text(questions[2])
+				.font(.title2)
 			
 //Multiple options list
 			Section(header: Text("Select multiple")){
