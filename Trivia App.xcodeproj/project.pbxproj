@@ -17,10 +17,11 @@
 		C3285D9126F0660B0067DACE /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D9026F0660B0067DACE /* HistoryView.swift */; };
 		C3285D9326F0BDDD0067DACE /* QAModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D9226F0BDDD0067DACE /* QAModel.swift */; };
 		C3285D9526F0E72A0067DACE /* SummeryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D9426F0E72A0067DACE /* SummeryView.swift */; };
-		C3285D9826F101720067DACE /* Answers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D9626F101720067DACE /* Answers+CoreDataClass.swift */; };
-		C3285D9926F101720067DACE /* Answers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D9726F101720067DACE /* Answers+CoreDataProperties.swift */; };
 		C3285D9B26F115B50067DACE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3285D9A26F115B50067DACE /* Launch Screen.storyboard */; };
 		C3285D9D26F118DF0067DACE /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285D9C26F118DF0067DACE /* ThirdView.swift */; };
+		C3285DA426F196CF0067DACE /* Answers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285DA226F196CF0067DACE /* Answers+CoreDataClass.swift */; };
+		C3285DA526F196CF0067DACE /* Answers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285DA326F196CF0067DACE /* Answers+CoreDataProperties.swift */; };
+		C3285DA726F1AF540067DACE /* MultipleOptionBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3285DA626F1AF540067DACE /* MultipleOptionBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +37,11 @@
 		C3285D9026F0660B0067DACE /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		C3285D9226F0BDDD0067DACE /* QAModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QAModel.swift; sourceTree = "<group>"; };
 		C3285D9426F0E72A0067DACE /* SummeryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummeryView.swift; sourceTree = "<group>"; };
-		C3285D9626F101720067DACE /* Answers+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answers+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C3285D9726F101720067DACE /* Answers+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answers+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C3285D9A26F115B50067DACE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C3285D9C26F118DF0067DACE /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		C3285DA226F196CF0067DACE /* Answers+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answers+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C3285DA326F196CF0067DACE /* Answers+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Answers+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C3285DA626F1AF540067DACE /* MultipleOptionBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleOptionBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +98,8 @@
 		C3285D8B26F0637E0067DACE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C3285D9626F101720067DACE /* Answers+CoreDataClass.swift */,
-				C3285D9726F101720067DACE /* Answers+CoreDataProperties.swift */,
+				C3285DA226F196CF0067DACE /* Answers+CoreDataClass.swift */,
+				C3285DA326F196CF0067DACE /* Answers+CoreDataProperties.swift */,
 				C3285D9226F0BDDD0067DACE /* QAModel.swift */,
 			);
 			path = Model;
@@ -119,6 +121,7 @@
 				C3285D9026F0660B0067DACE /* HistoryView.swift */,
 				C3285D9426F0E72A0067DACE /* SummeryView.swift */,
 				C3285D9C26F118DF0067DACE /* ThirdView.swift */,
+				C3285DA626F1AF540067DACE /* MultipleOptionBox.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,12 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3285DA726F1AF540067DACE /* MultipleOptionBox.swift in Sources */,
 				C3285D8F26F064470067DACE /* SecondView.swift in Sources */,
+				C3285DA526F196CF0067DACE /* Answers+CoreDataProperties.swift in Sources */,
 				C3285D9526F0E72A0067DACE /* SummeryView.swift in Sources */,
 				C3285D8126F059660067DACE /* Persistence.swift in Sources */,
+				C3285DA426F196CF0067DACE /* Answers+CoreDataClass.swift in Sources */,
 				C3285D9326F0BDDD0067DACE /* QAModel.swift in Sources */,
-				C3285D9926F101720067DACE /* Answers+CoreDataProperties.swift in Sources */,
-				C3285D9826F101720067DACE /* Answers+CoreDataClass.swift in Sources */,
 				C3285D7A26F059620067DACE /* HomeView.swift in Sources */,
 				C3285D8426F059660067DACE /* Trivia_App.xcdatamodeld in Sources */,
 				C3285D9D26F118DF0067DACE /* ThirdView.swift in Sources */,

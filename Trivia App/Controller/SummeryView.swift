@@ -7,36 +7,41 @@
 
 import SwiftUI
 
+
+// Summery View for each game
 struct SummeryView: View {
 	
 	@Binding internal var homeNavlink: Bool
+	@State private var questions = Questions().questions
 	var answer: [String]
 	var answer2: [String]
-    var body: some View {
+	var body: some View {
 		VStack{
 			VStack(spacing: 20){
+//First Question and answer
 				Section{
-				Text("What's your name?")
-					.font(.title)
-				Text("\(answer[0])")
-					.font(.title3)
+					Text(questions[0])
+						.font(.title)
+					Text("\(answer[0])")
+						.font(.title3)
 				}
-				
+// 2nd Question and answer
 				Section{
-				Text("Who's your favourite cricketer?")
-					.font(.title)
-				Text("\(answer[1])")
-					.font(.title3)
+					Text(questions[1])
+						.font(.title)
+					Text("\(answer[1])")
+						.font(.title3)
 				}
-				
+// 3rd Question and answer
 				Section{
-				Text("What're the colors of Indian national flag?")
-					.font(.title)
-				Text("\(answer2.joined(separator: ","))")
-					.font(.title3)
+					Text(questions[2])
+						.font(.title)
+					Text("\(answer2.joined(separator: ","))")
+						.font(.title3)
 				}
 			}
-			
+
+// Button to navigate back to home
 			
 			Button(action: {self.homeNavlink.toggle()}){
 				Text("Restart")
@@ -49,9 +54,12 @@ struct SummeryView: View {
 		}
 		
 		.navigationBarTitle("Summery", displayMode: .inline)
+		.navigationBarBackButtonHidden(true)
+		
+//This navigates to History View
 		.navigationBarItems(trailing: NavigationLink("History", destination: HistoryView(homeNavlink: $homeNavlink)))
 		
-    }
+	}
 	
 	
 	

@@ -7,24 +7,32 @@
 
 import SwiftUI
 
+
+// Second View
 struct SecondView: View {
 	@Binding internal var homeNavlink: Bool
+	@State private var questions = Questions().questions
+	@State private var options = Options()
 	@State internal var answer: [String]
 	@State internal var picked = ""
 	@State internal var is2ndNavlinkActive = false
 	var body: some View {
-		VStack{
-			Text("Who's your favourite cricketer?")
+		VStack(spacing: 30){
 			
+//Second Question
+			Text(questions[1])
+			
+//Answer Picker
 			Picker("Select anyone", selection: $picked) {
 				
-				Text("Sachine Tendulkar")
-				Text("Virat Kolli")
-				Text("Adam GilChrist")
+				ForEach(options.ops1, id: \.self){option in
+					Text(option)
+				}
 				
 			}
-			.pickerStyle(InlinePickerStyle())
-			
+			.pickerStyle(MenuPickerStyle())
+
+// Next Button to navigate to third View
 			Button(action: {
 				self.answer.append(self.picked)
 				self.is2ndNavlinkActive.toggle()
@@ -37,6 +45,8 @@ struct SecondView: View {
 					.clipShape(Capsule())
 				
 			}
+			.opacity(picked.isEmpty ? 0.5 : 1)
+			.disabled(picked.isEmpty)
 			
 			NavigationLink("", destination: ThirdView(homeNavlink: self.$homeNavlink, answer: self.answer), isActive: $is2ndNavlinkActive)
 		}

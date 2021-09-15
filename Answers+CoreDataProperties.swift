@@ -2,7 +2,7 @@
 //  Answers+CoreDataProperties.swift
 //  Trivia App
 //
-//  Created by administrator on 14/09/2021.
+//  Created by administrator on 15/09/2021.
 //
 //
 
@@ -16,9 +16,10 @@ extension Answers {
         return NSFetchRequest<Answers>(entityName: "Answers")
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var favCricketer: String?
     @NSManaged public var colors: [String]?
+    @NSManaged public var favCricketer: String?
+    @NSManaged public var name: String?
+    @NSManaged public var date: Date?
 	
 	public var unWrappedName: String{
 		name ?? "Unknown"
@@ -30,6 +31,10 @@ extension Answers {
 	
 	public var unWrappedColors: [String]{
 		colors ?? [String]()
+	}
+	
+	public var unWrappedDate: Date{
+		date ?? Date()
 	}
 
 }
